@@ -1,6 +1,6 @@
 # PowerShell Network Test Toolkit
 
-A PowerShell module for testing network connectivity -- TCP/UDP port testing, a local port listener for validating firewall rules, and bulk testing from CSV files.
+A PowerShell module for testing network connectivity - TCP/UDP port testing, a local port listener for validating firewall rules, and bulk testing from CSV files.
 
 ## Functions
 
@@ -9,7 +9,7 @@ Opens a TCP listener on a specified port and logs incoming connections with time
 
 ```powershell
 Start-PortListener -Port 443
-# Listening on TCP port 443 -- press CTRL+C to stop
+# Listening on TCP port 443 - press CTRL+C to stop
 # Address         Port  DateTime
 # 10.0.0.50      49832  4/16/2026 2:30:15 PM
 ```
@@ -71,7 +71,7 @@ Destination,Port,Direction
 
 ## Use Cases
 
-- **Firewall change validation** -- after a firewall change, bulk-test all expected rules from a spreadsheet
-- **Migration readiness** -- verify connectivity from a new environment before cutover
-- **Troubleshooting** -- run the listener on one side and test from the other to isolate where traffic is being dropped
-- **Audit** -- periodically test that expected ports are still open (or closed)
+- **Firewall change validation** - after a firewall change, bulk-test all expected rules from a spreadsheet
+- **Migration readiness** - verify connectivity from a new environment before cutover
+- **Troubleshooting** - run the listener on one side and test from the other to isolate where traffic is being dropped
+- **Audit** - periodically test that expected ports are still open (or closed)
